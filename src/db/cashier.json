@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Anwar Yusuf AB",
+    "username": "anwar",
+    "password": "anwar",
+    "phone_numer": "08971213121",
+    "role": "Admin",
+    "address": "Jl. Tepi Sungai"
+  },
+  {
+    "id": 2,
+    "name": "Kasir 1",
+    "username": "kasir",
+    "password": "kasir",
+    "phone_numer": "03420912154",
+    "role": "Cashier",
+    "address": "Jl. Kepuncak Gunung"
+  }
+]

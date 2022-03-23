@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "laptop",
+    "description": "laptop keluaran terbaru",
+    "price": 5000000000
+  },
+  {
+    "id": 2,
+    "name": "handphone",
+    "description": "handphone",
+    "price": 300000000
+  }
+]

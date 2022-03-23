@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+        "/dist/*"
+    ],
+    "rules": {
+        "no-console": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "no-use-before-define": "off",
+        "class-methods-use-this": "off"
+    }
+}
