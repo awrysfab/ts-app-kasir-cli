@@ -1,7 +1,7 @@
 import Cashier from '../models/Cashier';
 import data from '../db/cashier.json';
 
-export default class UserService {
+export default class CashierSerice {
   private cashiers : Cashier[] = [];
 
   constructor() {
