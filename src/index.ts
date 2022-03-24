@@ -136,6 +136,11 @@ function transactionProductConfirm() {
         console.log('\n');
         transactionProduct();
       } else if (answers.confirm === 'lanjut pembayaran') {
+        let totalPrice = 0;
+        cart.forEach((element) => {
+          totalPrice += element.price;
+        });
+        console.log('Total Pembelian: ', totalPrice);
         console.log('\n');
         transactionPayment();
       }
@@ -155,11 +160,25 @@ function transactionPayment() {
     .then((answers) => {
       if (answers.payment === 'tunai') {
         console.log('\n');
-        transactionPaymentConfirm();
+        transactionCashPayment();
       } else if (answers.payment === 'transfer bank') {
         console.log('\n');
         transactionBankPayment();
       }
+    });
+}
+
+function transactionCashPayment() {
+  inquirer
+    .prompt([
+      {
+        name: 'cash',
+        message: 'Jumlah Uang:',
+      },
+    ])
+    .then((answers) => {
+      console.log('\n');
+      transactionPaymentConfirm(undefined, answers.cash);
     });
 }
 
@@ -177,7 +196,7 @@ function transactionBankPayment() {
     });
 }
 
-function transactionPaymentConfirm(accNumber? :string) {
+function transactionPaymentConfirm(accNumber? :string, cash? :number) {
   inquirer
     .prompt([
       {
@@ -198,8 +217,10 @@ function transactionPaymentConfirm(accNumber? :string) {
         });
         if (typeof accNumber !== 'undefined') {
           payment = new BankTransferPayment(amount, accNumber);
+        } else if (typeof cash !== 'undefined') {
+          payment = new CashPayment(amount, (cash - amount));
         } else {
-          payment = new CashPayment(amount);
+          payment = new Payment(amount);
         }
         orderService.addOrder(
           new Order(

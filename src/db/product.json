@@ -3,18 +3,18 @@
     "id": "E1",
     "name": "laptop",
     "description": "laptop keluaran terbaru",
-    "price": 5000000000
+    "price": 8000000
   },
   {
     "id": "E2",
     "name": "handphone",
     "description": "handphone",
-    "price": 300000000
+    "price": 2000000
   },
   {
     "id": "E3",
     "name": "TV",
     "description": "TV terbaru",
-    "price": 2000000
+    "price": 3500000
   }
 ]
