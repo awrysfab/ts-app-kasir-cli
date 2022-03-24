@@ -13,7 +13,6 @@ export default class UserService {
           user.username,
           user.password,
           user.phone_numer,
-          user.role,
           user.address,
         ));
       },

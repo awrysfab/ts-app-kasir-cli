@@ -5,7 +5,6 @@
     "username": "anwar",
     "password": "anwar",
     "phone_numer": "08971213121",
-    "role": "Admin",
     "address": "Jl. Tepi Sungai"
   },
   {
@@ -14,7 +13,6 @@
     "username": "kasir",
     "password": "kasir",
     "phone_numer": "03420912154",
-    "role": "Cashier",
     "address": "Jl. Kepuncak Gunung"
   }
 ]

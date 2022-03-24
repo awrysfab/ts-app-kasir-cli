@@ -1,6 +1,7 @@
 import Cashier from './Cashier';
 import OrderDetail from './OrderDetail';
 import Payment from './Payment';
+import Product from './Product';
 
 export default class Order {
   private date: Date;
@@ -14,12 +15,11 @@ export default class Order {
   constructor(
     cashier: Cashier,
     payment: Payment,
-    orderDetail: OrderDetail,
-    date: Date,
+    products: Product[],
   ) {
+    this.date = new Date();
     this.cashier = cashier;
     this.payment = payment;
-    this.orderDetail = orderDetail;
-    this.date = date;
+    this.orderDetail = new OrderDetail(products);
   }
 }

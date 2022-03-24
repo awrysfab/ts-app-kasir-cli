@@ -1,0 +1,59 @@
+[
+  {
+    "date": "2022-03-24T04:16:03.348Z",
+    "cashier": {
+      "id": 1,
+      "name": "Anwar Yusuf AB",
+      "username": "anwar",
+      "password": "anwar",
+      "phoneNumber": "08971213121",
+      "address": "Jl. Tepi Sungai"
+    },
+    "payment": {
+      "amount": 302000000
+    },
+    "orderDetail": {
+      "products": [
+        {
+          "id": "E3",
+          "name": "TV",
+          "description": "TV terbaru",
+          "price": 2000000
+        },
+        {
+          "id": "E2",
+          "name": "handphone",
+          "description": "handphone",
+          "price": 300000000
+        }
+      ],
+      "totalPrice": 302000000
+    }
+  },
+  {
+    "date": "2022-03-24T04:16:22.723Z",
+    "cashier": {
+      "id": 1,
+      "name": "Anwar Yusuf AB",
+      "username": "anwar",
+      "password": "anwar",
+      "phoneNumber": "08971213121",
+      "address": "Jl. Tepi Sungai"
+    },
+    "payment": {
+      "amount": 5000000000,
+      "accountNumber": "12312121"
+    },
+    "orderDetail": {
+      "products": [
+        {
+          "id": "E1",
+          "name": "laptop",
+          "description": "laptop keluaran terbaru",
+          "price": 5000000000
+        }
+      ],
+      "totalPrice": 5000000000
+    }
+  }
+]

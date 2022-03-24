@@ -9,8 +9,6 @@ export default class Cashier {
 
   phoneNumber: string;
 
-  role: string;
-
   address: string;
 
   constructor(
@@ -19,7 +17,6 @@ export default class Cashier {
     username: string,
     password:string,
     phoneNumber:string,
-    role:string,
     address:string,
   ) {
     this.id = id;
@@ -27,7 +24,6 @@ export default class Cashier {
     this.username = username;
     this.password = password;
     this.phoneNumber = phoneNumber;
-    this.role = role;
     this.address = address;
   }
 }

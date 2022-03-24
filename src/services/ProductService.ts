@@ -18,11 +18,17 @@ export default class ProductService {
     );
   }
 
-  getProduct() {
+  getProduct(id: string) : Product {
+    return this.products.filter(
+      (element) => element.id === id,
+    )[0];
+  }
+
+  getAllProducts() {
     return this.products;
   }
 
-  addProduct(id:number, name:string, description:string, price:number) {
+  addProduct(id:string, name:string, description:string, price:number) {
     this.products.push({
       id, name, description, price,
     });
